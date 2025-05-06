@@ -79,9 +79,9 @@ To make life easier, we'll use the awesome Github Codespace functionality. Githu
 #### Steps:
 1. Open Langflow
 2. Click `+ New Flow` / `+ Blank Flow`
-3. Collapse `Inputs` and drag the `Chat Input` component to the canvas
-4. Collapse `Models` and drag the `OpenAI` component to the canvas. Connect `Input` to the `Chat Input`
-5. Collapse `Outputs` and drag the `Chat Output` component to the canvas. Connect `Message` to the `Chat Output` component
+3. Expand `Inputs` and drag the `Chat Input` component to the canvas
+4. Expand `Models` and drag the `OpenAI` component to the canvas. Connect `Input` to the `Chat Input`
+5. Expand `Outputs` and drag the `Chat Output` component to the canvas. Connect `Message` to the `Chat Output` component
 
 ![chatbot-flow](./assets/chatbot-flow.png)
 
@@ -151,7 +151,7 @@ You just created a new empty collection to store knowledge base articles.
 #### Steps: Add Astra DB as a RAG tool in Langflow
 
 Extend your existing Basic Agentic AI flow with the following:
-1. Collapse `Vector Stores` and drag `Astra DB` to the canvas
+1. Expand `Vector Stores` and drag `Astra DB` to the canvas
 2. Click the component and select `Tool mode`
 3. Make sure the `Astra DB Application Token` is configured, then select your `agentic-ai` database and `company_faq` collection
 4. Click `Edit tools` and update the three `Tool descriptions` by replacing
@@ -173,11 +173,11 @@ As a response we get a generic answer. Why? Because our collection is still empt
 
 #### Steps: Add some articles to our knowledge base
 Extend your flow with the following additional flow (scroll down a bit for a blank piece of canvas):
-1. Collapse `Data` and drag `File` to the canvas
+1. Expand `Data` and drag `File` to the canvas
 2. Click on `Upload a file` and upload [./data/Company_FAQ.pdf](./data/Company_FAQ.pdf) from this repository (you'll have to download it first)
-3. Collapse `Langchain` and drag `Recursive Character Splitter` to the canvas
+3. Expand `Langchain` and drag `Recursive Character Splitter` to the canvas
 4. Set the `Chunk size` to 500 (because NV-Embed-QA only allows 512 tokens at maximum) and `Chunk overlap` to 100 (so that every chunk has a bit of information from the previous one)
-5. Collapse `Vector Stores` and drag `Astra DB` to the canvas
+5. Expand `Vector Stores` and drag `Astra DB` to the canvas
 6. Make sure the `Astra DB Application Token` is configured, then select your `agentic-ai` database and `company_faq` collection
 7. Click the play button `▶️` on the `Astra DB` component, see the flow run and observe the time consumed. You can also click the intermediate magnifying glasses `🔍` to debug the flow.
 
@@ -191,7 +191,7 @@ In this step we'll have a look at the dataset in your `agentic-ai` database in [
 1. Browse to your `agentic-ai` database on [Astra DB](https://astra.datastax.com)
 2. Click `Data Explorer` and click `company_faq`
 3. Observe the data loaded into the collection on the right side of the screen
-4. Toggle from `Table` to `JSON` view and collapse some of the rows to see what's inside
+4. Toggle from `Table` to `JSON` view and expand some of the rows to see what's inside
 
 To see Vector Search in action, type the following in the text box `Vector Search`:
 
@@ -224,7 +224,7 @@ Click on `▶️ Playground` and click on `+` on the left side to start a new Ch
 
 #### Steps 🛠️🔍: Add Order Lookup to the agent 
 1. Return to your Langflow flow
-2. Collapse `Tools` and drag `Astra DB Tool` to the canvas
+2. Expand `Tools` and drag `Astra DB Tool` to the canvas
 3. Configure as follows:
     - **Tool Name:** `OrderLookup`  
     - **Tool Description:** `A tool used to look up an order based on its ID`   
@@ -234,7 +234,7 @@ Click on `▶️ Playground` and click on `+` on the left side to start a new Ch
 4. Connect the `Astra DB Tool` component to the `Agent` component
 
 #### Steps 🛠️🔍: Add Products Lookup to the agent 
-1. Collapse `Tools` and drag `Astra DB Tool` to the canvas
+1. Expand `Tools` and drag `Astra DB Tool` to the canvas
 2. Configure as follows:
     - **Tool Name:** `ProductLookup`  
     - **Tool Description:** `A tool used to look up a product based on its ID`   
