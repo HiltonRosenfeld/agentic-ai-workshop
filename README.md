@@ -29,7 +29,6 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
 - Note down the **API Endpoint** which can be found in the right pane underneath *Database details*.
 - Click on `Generate Token` and give it a name, i.e. `agentic-ai-token` and click `Generate`. Now click on the copy button and paste the **Application Token** somewhere for later use
 
-    ![astradb](./assets/astra-new-db.png)
   <img src="./assets/astra-new-db.png" alt="AstraDB" width="439" height="320">
 
 ### Sign up for OpenAI
