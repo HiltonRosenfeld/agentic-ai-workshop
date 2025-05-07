@@ -127,7 +127,7 @@ Click the magnifying glass `🔍` in the `OpenAI` component. This shows you a po
 
 👏 Amazing! You just built your first AI Agent. Let's run it by clicking `▶️ Playground` and asking the question:
 
-    What is 2x the value of a Euro in Dollars
+    What is 2x the value of a Euro in Australian Dollars
 
 You'll get an answer stating a value of $2.16 or something (as of April 2025).
 
