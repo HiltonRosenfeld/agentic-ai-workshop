@@ -30,7 +30,7 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
   <img src="./assets/astra-new-db.png" alt="AstraDB" width="439" height="320">
 
 ### Sign up for OpenAI (Optional)
-**We are providing an OpenAI API key for use in this workshop**
+> **_NOTE:_**  We are providing an OpenAI API key for use in this workshop
 
 - Create an [OpenAI account](https://platform.openai.com/signup) or [sign in](https://platform.openai.com/login).
 - Navigate to the [API key page](https://platform.openai.com/account/api-keys) and create a new **Secret Key**, optionally naming the key.
@@ -54,7 +54,10 @@ To make life easier, we'll use the awesome Github Codespace functionality. Githu
 
     ![codespace](./assets/create-codespace.png)
 
-5. Configure the secrets as follows:
+   This creates a virtual development environment based on Linux and VS Code.
+   > **_NOTE:_**  Wait for the virtual environemnt to complete initialising.
+
+6. Configure the secrets as follows:
 
 - Copy `.env.example` to `.env`
 - Edit `.env` and provide the required variables `OPENAI_API_KEY`, `ASTRA_DB_API_ENDPOINT` and `ASTRA_DB_APPLICATION_TOKEN`
@@ -67,7 +70,9 @@ To make life easier, we'll use the awesome Github Codespace functionality. Githu
     uv run langflow run --env-file .env
     ```
 
-    This starts Langflow and opens a port to your Codespace in the cloud. In case you loose track of the URL to Langflow, just click on `PORTS` in the terminal window.
+    This installs and starts Langflow and opens a port to your Codespace in the cloud. In case you loose track of the URL to Langflow, just click on `PORTS` in the terminal window.
+
+   > **_NOTE:_**  You will see errors as Langflow starts. These are expected and can be ignored. Langflow will start just fine.
 
 🎉 Congrats! You finished the set-up part of the workshop. Now for the fun part!
 
@@ -78,10 +83,11 @@ To make life easier, we'll use the awesome Github Codespace functionality. Githu
 
 #### Steps:
 1. Open Langflow
-2. Click `+ New Flow` / `+ Blank Flow`
+2. Click `+ Create First Flow` / `+ Blank Flow`
 3. Expand `Inputs` and drag the `Chat Input` component to the canvas
 4. Expand `Models` and drag the `OpenAI` component to the canvas. Connect `Input` to the `Chat Input`
-5. Expand `Outputs` and drag the `Chat Output` component to the canvas. Connect `Message` to the `Chat Output` component
+5. Set the Model Name to: `gpt-4o-mini`
+6. Expand `Outputs` and drag the `Chat Output` component to the canvas. Connect `Message` to the `Chat Output` component
 
 ![chatbot-flow](./assets/chatbot-flow.png)
 
