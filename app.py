@@ -7,7 +7,7 @@ load_dotenv()
 
 # Flow configuration
 FLOW_ID = "YOUR_FLOW_ID_HERE"
-FLOW_URL = f"http://127.0.0.1:7861/api/v1/run/{FLOW_ID}"
+FLOW_URL = f"http://127.0.0.1:7860/api/v1/run/{FLOW_ID}"
 TWEAKS = {}
 
 def run_flow(message, endpoint=FLOW_ID, output_type="chat", input_type="chat", tweaks=None):
