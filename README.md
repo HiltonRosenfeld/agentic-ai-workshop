@@ -12,11 +12,9 @@ By the end of this workshop, you’ll have a fully functional AI agent that can:
 ## 🛠️ Prerequisites
 This workshop assumes you have access to:
 1. [A Github account](https://github.com)
-
-During the course, you'll gain access to the following by signing up for free:
-1. [DataStax Astra DB](https://astra.datastax.com) (you can sign up through your **public** Github account)
-2. [OpenAI account](https://platform.openai.com/signup) (you can sign up through your Github account)
-    - *Alternatively we'll provide some OpenAI API keys to use for this workshop*
+2. [DataStax Astra DB](https://astra.datastax.com) (you can sign up through your **public** Github account)
+3. [OpenAI account](https://platform.openai.com/signup) (you can sign up through your Github account)
+    - *Alternatively, we are providing an OpenAI API key for use in this workshop*
 
 Follow the below steps and note down the **Astra DB API Endpoint**, **Astra DB ApplicationToken** and **OpenAI API Key** as we'll need them later on.
 
@@ -31,17 +29,19 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
 
   <img src="./assets/astra-new-db.png" alt="AstraDB" width="439" height="320">
 
-### Sign up for OpenAI
+### Sign up for OpenAI (Optional)
+**We are providing an OpenAI API key for use in this workshop**
+
 - Create an [OpenAI account](https://platform.openai.com/signup) or [sign in](https://platform.openai.com/login).
 - Navigate to the [API key page](https://platform.openai.com/account/api-keys) and create a new **Secret Key**, optionally naming the key.
-    - *Alternatively we'll provide some OpenAI API keys to use for this workshop*
+    - *Alternatively, we are providing an OpenAI API key for use in this workshop*
 
-    ![openai](./assets/openai-key.png)
+  <img src="./assets/openai-key.png" alt="OpenAI" width="650" height="358">
 
 ### ⚡️ Open this tutorial on Github Codespaces
 To make life easier, we'll use the awesome Github Codespace functionality. Github offers you a completely integrated developer experience and resources to get started quickly. How?
 
-1. Open the [agentic-ai-workshop](https://github.com/michelderu/agentic-ai-workshop) repository
+1. Open the [agentic-ai-workshop](https://github.com/HiltonRosenfeld/agentic-ai-workshop) repository
 2. Click on `Use this template`->`Ceate new repository` as follows:
 
     ![codespace](./assets/create-new-repository.png)
