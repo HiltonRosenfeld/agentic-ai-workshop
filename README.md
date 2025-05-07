@@ -160,11 +160,10 @@ Extend your existing Basic Agentic AI flow with the following:
 1. Expand `Vector Stores` and drag `Astra DB` to the canvas
 2. Click the component and select `Tool mode`
 3. Make sure the `Astra DB Application Token` is configured, then select your `agentic-ai` database and `company_faq` collection
-4. Click `Edit tools` and update the three `Tool descriptions` by replacing
+4. Click the settings button next to the `Actions` list and update the three `Action descriptions` by replacing
     - `Ingest and search documents in Astra DB` with
     - `Answer frequently asked questions (FAQs) about shipping, returns, placing orders, and more.`
     - ![astra-rag-agent](./assets/rag-edit-tools.png)
-    - Click `Save`
     - ⚠️ This essential step ensures the Agent understands to use this specific tool to search for FAQs
 4. Connect the `Astra DB` component to the `Agent` component
 
