@@ -301,12 +301,14 @@ In this step we'll create a simple Python app that runs the Langflow flow.
 1. In Langflow exit the Playground and click on `Publish` in the right top corner and then click `API Access`
 2. Click on `Python`
 3. Copy the code and paste it in a new file called `flow.py`
-4. Change the input value on line 6 to something like *How can I cancel order 1001 and what is the shipping policy?*
-5. Save the file
+4. Change the hostname part of the URL on line 6 to be `http://127.0.0.1:7860/`
+5. Change the input value on line 6 to something like *How can I cancel order 1001 and what is the shipping policy?*
+6. Save the file
 
 ![langflow-python-api](./assets/langflow-python-api.png)
 
 Let's run it!
+1. Start a new terminal window by clicking on the `+` symbol in the terminal section of the VS Code.
 
 ```bash
 uv run flow.py
@@ -323,7 +325,7 @@ In this step we'll use a simple Streamlit app that supports Customer Support Age
 #### Steps: Configure the Langflow FLOW_ID
 1. Open `app.py`
 2. Update line 9 to the `FLOW_ID` of your flow, you can find the Flow ID in Langflow by clicking on `Publish->API Access` and taking the ID after `.../run/`
-3. Save the file
+4. Save the file
 
 In order to run the app:
 ```bash
